@@ -4,8 +4,6 @@
 #include <iostream>
 
 #include "ros/ros.h"
-//#include "sensor_msgs/Image.h"
-//#include "zed_interfaces/Objects.h"
 #include "human_vision_exchange/FaceDescriptionVector.h"
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/core.hpp>
@@ -15,10 +13,7 @@
 #include <ZedData.hpp>
 
 namespace RT
-{
-//	void grab_image(const sensor_msgs::ImagePtr&  image);
-//	void grab_objects(const zed_interfaces::Objects& objects);
-	
+{	
 	void grab_faceVectors(const human_vision_exchange::FaceDescriptionVector& faceDescriptionVector);
 }
 

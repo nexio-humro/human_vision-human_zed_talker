@@ -82,6 +82,10 @@ namespace MF
 
 			objectsMsg.objects[i].label_id = data.id;
 			
+            objectsMsg.objects[i].position.x = data.position.x;
+            objectsMsg.objects[i].position.y = data.position.y;
+            objectsMsg.objects[i].position.z = data.position.z;
+			
 			for (size_t j = 0; j < data.keypoint_2d.size(); j++)
 			{
 				objectsMsg.objects[i].keypoint_2d[j].x = data.keypoint_2d[j].x;
@@ -94,6 +98,8 @@ namespace MF
 				objectsMsg.objects[i].keypoint_3d[j].y = data.keypoint[j].y;
 				objectsMsg.objects[i].keypoint_3d[j].z = data.keypoint[j].z;
 			}
+			
+			objectsMsg.objects[i].tracking_state = static_cast<int>(data.tracking_state);
 		}
 	}
 }
