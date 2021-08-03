@@ -9,7 +9,8 @@ namespace MF
 		initParameters.coordinate_units = sl::UNIT::METER;
 		initParameters.depth_maximum_distance = 15.f;
 		initParameters.camera_image_flip = sl::FLIP_MODE::AUTO; // 3.2 and ZED2 --> detect automatically the flip mode
-		initParameters.camera_resolution = sl::RESOLUTION::HD720;
+		initParameters.camera_resolution = sl::RESOLUTION::HD1080;
+//		initParameters.camera_resolution = sl::RESOLUTION::HD720;
 		initParameters.camera_fps = 30;
 	}
 	
